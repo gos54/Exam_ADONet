@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp7.SaleBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="SaleBookWindow" Height="100" Width="550">
+    <Grid>
+        <Label Content="цен на жанр:" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="genre" HorizontalAlignment="Left" Margin="222,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="%" HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.101,-0.028"/>
+        <ComboBox x:Name="choose" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Понижение</ComboBoxItem>
+            <ComboBoxItem>Повышение</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="percent" HorizontalAlignment="Left" Margin="375,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="на" HorizontalAlignment="Left" Margin="347,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.101,-0.028"/>
+        <Button Content="Подвердить" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>
